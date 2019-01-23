@@ -34,7 +34,7 @@ QT_BEGIN_NAMESPACE
 class Ui_InsertDetails
 {
 public:
-    QGridLayout *gridLayout_4;
+    QGridLayout *gridLayout_5;
     QTabWidget *tabWidget;
     QWidget *SearchStudent;
     QGridLayout *gridLayout_2;
@@ -44,7 +44,6 @@ public:
     QHBoxLayout *horizontalLayout_20;
     QComboBox *searchType;
     QSpacerItem *horizontalSpacer_14;
-    QSpacerItem *horizontalSpacer_8;
     QHBoxLayout *horizontalLayout_19;
     QVBoxLayout *verticalLayout_6;
     QLabel *seachTextType;
@@ -55,6 +54,7 @@ public:
     QHBoxLayout *horizontalLayout_17;
     QPushButton *search;
     QSpacerItem *horizontalSpacer_13;
+    QLabel *detailsLabel;
     QLabel *searchResults;
     QWidget *addStudent;
     QGridLayout *gridLayout;
@@ -213,22 +213,56 @@ public:
     QLabel *finalYear_noOfStudents;
     QSpacerItem *horizontalSpacer_63;
     QWidget *tab_13;
-    QPushButton *pushButton;
+    QGridLayout *gridLayout_4;
+    QHBoxLayout *horizontalLayout_32;
+    QLabel *label_22;
+    QTextEdit *hostName;
+    QPushButton *submitHostName;
+    QSpacerItem *horizontalSpacer_35;
+    QVBoxLayout *verticalLayout_21;
+    QHBoxLayout *horizontalLayout_33;
+    QLabel *label_23;
+    QLabel *acedemicYear;
+    QSpacerItem *horizontalSpacer_33;
+    QHBoxLayout *horizontalLayout_38;
+    QPushButton *changeAcedemicYear;
+    QSpacerItem *horizontalSpacer_34;
+    QVBoxLayout *verticalLayout_22;
+    QLabel *label_24;
+    QHBoxLayout *horizontalLayout_39;
+    QLineEdit *setAcYear;
+    QPushButton *setAceYear;
+    QHBoxLayout *horizontalLayout_37;
+    QVBoxLayout *verticalLayout_20;
+    QHBoxLayout *horizontalLayout_34;
+    QLabel *label_25;
+    QSpacerItem *horizontalSpacer_8;
+    QTextEdit *secondYrBatch;
+    QHBoxLayout *horizontalLayout_35;
+    QLabel *label_26;
+    QSpacerItem *horizontalSpacer_31;
+    QTextEdit *thirdYrBatch;
+    QHBoxLayout *horizontalLayout_36;
+    QLabel *label_27;
+    QSpacerItem *horizontalSpacer_32;
+    QTextEdit *finalYrBatch;
+    QPushButton *confirmAcedemicYear;
+    QSpacerItem *verticalSpacer_6;
     QPushButton *close;
 
     void setupUi(QDialog *InsertDetails)
     {
         if (InsertDetails->objectName().isEmpty())
             InsertDetails->setObjectName(QStringLiteral("InsertDetails"));
-        InsertDetails->resize(631, 749);
+        InsertDetails->resize(619, 758);
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(InsertDetails->sizePolicy().hasHeightForWidth());
         InsertDetails->setSizePolicy(sizePolicy);
         InsertDetails->setMaximumSize(QSize(800, 800));
-        gridLayout_4 = new QGridLayout(InsertDetails);
-        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        gridLayout_5 = new QGridLayout(InsertDetails);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         tabWidget = new QTabWidget(InsertDetails);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
@@ -265,10 +299,6 @@ public:
 
 
         verticalLayout_8->addLayout(verticalLayout_7);
-
-        horizontalSpacer_8 = new QSpacerItem(40, 5, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        verticalLayout_8->addItem(horizontalSpacer_8);
 
         horizontalLayout_19 = new QHBoxLayout();
         horizontalLayout_19->setObjectName(QStringLiteral("horizontalLayout_19"));
@@ -322,6 +352,11 @@ public:
 
 
         verticalLayout_8->addLayout(horizontalLayout_17);
+
+        detailsLabel = new QLabel(SearchStudent);
+        detailsLabel->setObjectName(QStringLiteral("detailsLabel"));
+
+        verticalLayout_8->addWidget(detailsLabel);
 
         searchResults = new QLabel(SearchStudent);
         searchResults->setObjectName(QStringLiteral("searchResults"));
@@ -1136,12 +1171,226 @@ public:
         tabWidget->addTab(tab_4, QString());
         tab_13 = new QWidget();
         tab_13->setObjectName(QStringLiteral("tab_13"));
-        pushButton = new QPushButton(tab_13);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(130, 80, 99, 27));
+        gridLayout_4 = new QGridLayout(tab_13);
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        horizontalLayout_32 = new QHBoxLayout();
+        horizontalLayout_32->setObjectName(QStringLiteral("horizontalLayout_32"));
+        label_22 = new QLabel(tab_13);
+        label_22->setObjectName(QStringLiteral("label_22"));
+        sizePolicy1.setHeightForWidth(label_22->sizePolicy().hasHeightForWidth());
+        label_22->setSizePolicy(sizePolicy1);
+        label_22->setMinimumSize(QSize(150, 31));
+        label_22->setMaximumSize(QSize(150, 104));
+
+        horizontalLayout_32->addWidget(label_22);
+
+        hostName = new QTextEdit(tab_13);
+        hostName->setObjectName(QStringLiteral("hostName"));
+        sizePolicy1.setHeightForWidth(hostName->sizePolicy().hasHeightForWidth());
+        hostName->setSizePolicy(sizePolicy1);
+        hostName->setMinimumSize(QSize(104, 31));
+        hostName->setMaximumSize(QSize(104, 31));
+
+        horizontalLayout_32->addWidget(hostName);
+
+        submitHostName = new QPushButton(tab_13);
+        submitHostName->setObjectName(QStringLiteral("submitHostName"));
+        sizePolicy1.setHeightForWidth(submitHostName->sizePolicy().hasHeightForWidth());
+        submitHostName->setSizePolicy(sizePolicy1);
+        submitHostName->setMinimumSize(QSize(99, 27));
+        submitHostName->setMaximumSize(QSize(99, 27));
+
+        horizontalLayout_32->addWidget(submitHostName);
+
+        horizontalSpacer_35 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_32->addItem(horizontalSpacer_35);
+
+
+        gridLayout_4->addLayout(horizontalLayout_32, 0, 0, 1, 2);
+
+        verticalLayout_21 = new QVBoxLayout();
+        verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
+        horizontalLayout_33 = new QHBoxLayout();
+        horizontalLayout_33->setObjectName(QStringLiteral("horizontalLayout_33"));
+        label_23 = new QLabel(tab_13);
+        label_23->setObjectName(QStringLiteral("label_23"));
+        sizePolicy1.setHeightForWidth(label_23->sizePolicy().hasHeightForWidth());
+        label_23->setSizePolicy(sizePolicy1);
+        label_23->setFont(font);
+
+        horizontalLayout_33->addWidget(label_23);
+
+        acedemicYear = new QLabel(tab_13);
+        acedemicYear->setObjectName(QStringLiteral("acedemicYear"));
+        sizePolicy1.setHeightForWidth(acedemicYear->sizePolicy().hasHeightForWidth());
+        acedemicYear->setSizePolicy(sizePolicy1);
+        QFont font6;
+        font6.setBold(true);
+        font6.setItalic(true);
+        font6.setWeight(75);
+        acedemicYear->setFont(font6);
+
+        horizontalLayout_33->addWidget(acedemicYear);
+
+        horizontalSpacer_33 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_33->addItem(horizontalSpacer_33);
+
+
+        verticalLayout_21->addLayout(horizontalLayout_33);
+
+        horizontalLayout_38 = new QHBoxLayout();
+        horizontalLayout_38->setObjectName(QStringLiteral("horizontalLayout_38"));
+        changeAcedemicYear = new QPushButton(tab_13);
+        changeAcedemicYear->setObjectName(QStringLiteral("changeAcedemicYear"));
+        sizePolicy1.setHeightForWidth(changeAcedemicYear->sizePolicy().hasHeightForWidth());
+        changeAcedemicYear->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_38->addWidget(changeAcedemicYear);
+
+        horizontalSpacer_34 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_38->addItem(horizontalSpacer_34);
+
+
+        verticalLayout_21->addLayout(horizontalLayout_38);
+
+
+        gridLayout_4->addLayout(verticalLayout_21, 1, 0, 1, 1);
+
+        verticalLayout_22 = new QVBoxLayout();
+        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
+        label_24 = new QLabel(tab_13);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        sizePolicy1.setHeightForWidth(label_24->sizePolicy().hasHeightForWidth());
+        label_24->setSizePolicy(sizePolicy1);
+        label_24->setMaximumSize(QSize(173, 27));
+
+        verticalLayout_22->addWidget(label_24);
+
+        horizontalLayout_39 = new QHBoxLayout();
+        horizontalLayout_39->setObjectName(QStringLiteral("horizontalLayout_39"));
+        setAcYear = new QLineEdit(tab_13);
+        setAcYear->setObjectName(QStringLiteral("setAcYear"));
+        sizePolicy1.setHeightForWidth(setAcYear->sizePolicy().hasHeightForWidth());
+        setAcYear->setSizePolicy(sizePolicy1);
+        setAcYear->setMaximumSize(QSize(173, 27));
+
+        horizontalLayout_39->addWidget(setAcYear);
+
+        setAceYear = new QPushButton(tab_13);
+        setAceYear->setObjectName(QStringLiteral("setAceYear"));
+        sizePolicy1.setHeightForWidth(setAceYear->sizePolicy().hasHeightForWidth());
+        setAceYear->setSizePolicy(sizePolicy1);
+        setAceYear->setMaximumSize(QSize(173, 27));
+
+        horizontalLayout_39->addWidget(setAceYear);
+
+
+        verticalLayout_22->addLayout(horizontalLayout_39);
+
+
+        gridLayout_4->addLayout(verticalLayout_22, 1, 1, 1, 1);
+
+        horizontalLayout_37 = new QHBoxLayout();
+        horizontalLayout_37->setObjectName(QStringLiteral("horizontalLayout_37"));
+        verticalLayout_20 = new QVBoxLayout();
+        verticalLayout_20->setObjectName(QStringLiteral("verticalLayout_20"));
+        horizontalLayout_34 = new QHBoxLayout();
+        horizontalLayout_34->setObjectName(QStringLiteral("horizontalLayout_34"));
+        label_25 = new QLabel(tab_13);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        sizePolicy1.setHeightForWidth(label_25->sizePolicy().hasHeightForWidth());
+        label_25->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_34->addWidget(label_25);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_34->addItem(horizontalSpacer_8);
+
+        secondYrBatch = new QTextEdit(tab_13);
+        secondYrBatch->setObjectName(QStringLiteral("secondYrBatch"));
+        sizePolicy1.setHeightForWidth(secondYrBatch->sizePolicy().hasHeightForWidth());
+        secondYrBatch->setSizePolicy(sizePolicy1);
+        secondYrBatch->setMaximumSize(QSize(51, 31));
+
+        horizontalLayout_34->addWidget(secondYrBatch);
+
+
+        verticalLayout_20->addLayout(horizontalLayout_34);
+
+        horizontalLayout_35 = new QHBoxLayout();
+        horizontalLayout_35->setObjectName(QStringLiteral("horizontalLayout_35"));
+        label_26 = new QLabel(tab_13);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        sizePolicy1.setHeightForWidth(label_26->sizePolicy().hasHeightForWidth());
+        label_26->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_35->addWidget(label_26);
+
+        horizontalSpacer_31 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_35->addItem(horizontalSpacer_31);
+
+        thirdYrBatch = new QTextEdit(tab_13);
+        thirdYrBatch->setObjectName(QStringLiteral("thirdYrBatch"));
+        sizePolicy1.setHeightForWidth(thirdYrBatch->sizePolicy().hasHeightForWidth());
+        thirdYrBatch->setSizePolicy(sizePolicy1);
+        thirdYrBatch->setMaximumSize(QSize(51, 31));
+
+        horizontalLayout_35->addWidget(thirdYrBatch);
+
+
+        verticalLayout_20->addLayout(horizontalLayout_35);
+
+        horizontalLayout_36 = new QHBoxLayout();
+        horizontalLayout_36->setObjectName(QStringLiteral("horizontalLayout_36"));
+        label_27 = new QLabel(tab_13);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        sizePolicy1.setHeightForWidth(label_27->sizePolicy().hasHeightForWidth());
+        label_27->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_36->addWidget(label_27);
+
+        horizontalSpacer_32 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_36->addItem(horizontalSpacer_32);
+
+        finalYrBatch = new QTextEdit(tab_13);
+        finalYrBatch->setObjectName(QStringLiteral("finalYrBatch"));
+        sizePolicy1.setHeightForWidth(finalYrBatch->sizePolicy().hasHeightForWidth());
+        finalYrBatch->setSizePolicy(sizePolicy1);
+        finalYrBatch->setMaximumSize(QSize(51, 31));
+
+        horizontalLayout_36->addWidget(finalYrBatch);
+
+
+        verticalLayout_20->addLayout(horizontalLayout_36);
+
+
+        horizontalLayout_37->addLayout(verticalLayout_20);
+
+        confirmAcedemicYear = new QPushButton(tab_13);
+        confirmAcedemicYear->setObjectName(QStringLiteral("confirmAcedemicYear"));
+        sizePolicy1.setHeightForWidth(confirmAcedemicYear->sizePolicy().hasHeightForWidth());
+        confirmAcedemicYear->setSizePolicy(sizePolicy1);
+        confirmAcedemicYear->setMinimumSize(QSize(111, 61));
+        confirmAcedemicYear->setMaximumSize(QSize(111, 61));
+
+        horizontalLayout_37->addWidget(confirmAcedemicYear);
+
+
+        gridLayout_4->addLayout(horizontalLayout_37, 2, 0, 1, 2);
+
+        verticalSpacer_6 = new QSpacerItem(20, 428, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_4->addItem(verticalSpacer_6, 3, 2, 1, 1);
+
         tabWidget->addTab(tab_13, QString());
 
-        gridLayout_4->addWidget(tabWidget, 0, 0, 1, 1);
+        gridLayout_5->addWidget(tabWidget, 0, 0, 1, 1);
 
         close = new QPushButton(InsertDetails);
         close->setObjectName(QStringLiteral("close"));
@@ -1149,7 +1398,7 @@ public:
         close->setSizePolicy(sizePolicy1);
         close->setMaximumSize(QSize(85, 27));
 
-        gridLayout_4->addWidget(close, 1, 0, 1, 1);
+        gridLayout_5->addWidget(close, 1, 0, 1, 1);
 
 
         retranslateUi(InsertDetails);
@@ -1173,6 +1422,7 @@ public:
         searchByName->setPlaceholderText(QApplication::translate("InsertDetails", "Name", 0));
         searchByENum->setPlaceholderText(QApplication::translate("InsertDetails", "E/XX/XXX", 0));
         search->setText(QApplication::translate("InsertDetails", "Search", 0));
+        detailsLabel->setText(QString());
         searchResults->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(SearchStudent), QApplication::translate("InsertDetails", "Search Student", 0));
         errorMessege->setText(QString());
@@ -1249,7 +1499,17 @@ public:
         label_2->setText(QApplication::translate("InsertDetails", "Number of Students :", 0));
         finalYear_noOfStudents->setText(QApplication::translate("InsertDetails", "60", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("InsertDetails", "Final Year", 0));
-        pushButton->setText(QApplication::translate("InsertDetails", "PushButton", 0));
+        label_22->setText(QApplication::translate("InsertDetails", "Enter the host name", 0));
+        submitHostName->setText(QApplication::translate("InsertDetails", "Submit", 0));
+        label_23->setText(QApplication::translate("InsertDetails", "Acedemic Year ", 0));
+        acedemicYear->setText(QApplication::translate("InsertDetails", "2019", 0));
+        changeAcedemicYear->setText(QApplication::translate("InsertDetails", "Change Acedemic Year", 0));
+        label_24->setText(QApplication::translate("InsertDetails", "Set Acedemic Year", 0));
+        setAceYear->setText(QApplication::translate("InsertDetails", "Confrim", 0));
+        label_25->setText(QApplication::translate("InsertDetails", "2nd year Batch", 0));
+        label_26->setText(QApplication::translate("InsertDetails", "3rd year Batch", 0));
+        label_27->setText(QApplication::translate("InsertDetails", "Final year Batch", 0));
+        confirmAcedemicYear->setText(QApplication::translate("InsertDetails", "Confirm", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_13), QApplication::translate("InsertDetails", "Settings", 0));
         close->setText(QApplication::translate("InsertDetails", "Close", 0));
     } // retranslateUi

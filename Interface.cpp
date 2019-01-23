@@ -7,8 +7,8 @@ Interface::Interface(QDialog *parent): QDialog(parent){
   le_userName = NULL;
   le_password = NULL;
   mainPage = NULL;
-  userName = "rajitha";
-  password = "11";
+  userName = "1";
+  password = "1";
   ui_loginWindow = new Ui_LoginWindow();
   if(!ui_loginWindow)
     return;
@@ -32,7 +32,7 @@ void Interface::Login(){
     lbl_loginError->setText("Incorret Details"); 
   else{
       hide();
-      mainPage = new MainPage(NULL);
+      mainPage = new MainPage(user_Name,password, NULL);
       mainPage->show();
   }
 }

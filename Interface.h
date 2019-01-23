@@ -3,6 +3,10 @@
 //QT libraries
 #include <QDialog>
 #include <QtGui>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QSqlRecord>
 //headers
 #include "MainPage.h"
 #include "ui_loginWindow.h"
